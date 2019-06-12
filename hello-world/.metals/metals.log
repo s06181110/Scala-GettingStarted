@@ -906,3 +906,8 @@ INFO  time: imported build in 0.25s
 INFO  time: indexed workspace in 2.44s
 INFO  compiling hello-world (1 scala source)
 INFO  time: compiled hello-world in 12s
+INFO  shutting down Metals
+shutdown request received: build/shutdown
+Client in /Users/yo_shi/programming/Scala/hello-world/.bloop triggered cancellation. Cancelling tasks...
+[0m[31m[E][0m BSP server cancelled, closing socket...
+INFO  bloop exit: 0
