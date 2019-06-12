@@ -891,3 +891,18 @@ INFO  bloop exit: 0
 WARN  no build target: /Users/yo_shi/programming/Scala/hello-world/build.sbt
 WARN  no build target: /Users/yo_shi/programming/Scala/hello-world/build.sbt
 WARN  no build target: 
+INFO  shutting down Metals
+INFO  time: initialize in 1.62s
+INFO  running embedded 'bloop bsp --protocol local --socket /var/folders/s_/vk78675d6jq3c__8rsm44nxh0000gn/T/bsp2816990692953870859/gyfsilwoi8rp.socket'
+INFO  skipping build import with status 'Requested'
+WARN  no build target: /Users/yo_shi/programming/Scala/hello-world/src/main/scala/Main.scala
+The server is listening for incoming connections at local:///var/folders/s_/vk78675d6jq3c__8rsm44nxh0000gn/T/bsp2816990692953870859/gyfsilwoi8rp.socket...
+Accepted incoming BSP client connection at local:///var/folders/s_/vk78675d6jq3c__8rsm44nxh0000gn/T/bsp2816990692953870859/gyfsilwoi8rp.socket
+INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/yo_shi/Library/Caches/org.scalameta.metals/bsp.trace.json
+request received: build/initialize
+INFO  time: connected to build server in 13s
+BSP initialization handshake complete.
+INFO  time: imported build in 0.25s
+INFO  time: indexed workspace in 2.44s
+INFO  compiling hello-world (1 scala source)
+INFO  time: compiled hello-world in 12s

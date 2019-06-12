@@ -2827,3 +2827,49 @@ Content-Length: 63
 [2019-06-12 22:12:51,840] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":26}}
 [2019-06-12 22:12:51,841] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(26)
 [2019-06-12 22:12:51,841] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(26)
+[2019-06-12 23:31:23,772] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 204
+[2019-06-12 23:31:23,772] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 204
+[2019-06-12 23:31:23,780] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":27,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///Users/yo_shi/programming/Scala/hello-world/src/main/scala/Main.scala"},"position":{"line":0,"character":8}}}
+[2019-06-12 23:31:23,780] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":27,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///Users/yo_shi/programming/Scala/hello-world/src/main/scala/Main.scala"},"position":{"line":0,"character":8}}}
+[2019-06-12 23:31:23,792] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-06-12 23:31:23,792] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-06-12 23:31:23,793] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":27}}
+[2019-06-12 23:31:23,793] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":27}}
+[2019-06-12 23:31:23,793] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (0, 8).
+[2019-06-12 23:31:23,793] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (0, 8).
+[2019-06-12 23:31:23,799] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(27)
+[2019-06-12 23:31:23,799] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(27)
+[2019-06-12 23:31:23,802] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-06-12 23:31:23,802] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-06-12 23:31:23,802] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-06-12 23:31:23,802] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-06-12 23:31:33,228] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 59
+[2019-06-12 23:31:33,228] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 59
+[2019-06-12 23:31:33,229] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":28,"method":"shutdown","params":null}
+[2019-06-12 23:31:33,229] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":28,"method":"shutdown","params":null}
+[2019-06-12 23:31:33,338] DEBUG langserver.core.MessageWriter - Content-Length: 199
+
+
+
+{"jsonrpc":"2.0","error":{"code":-32602,"message":"Invalid params","data":{"meaning":"Invalid method parameter(s).","error":{"obj":[{"msg":["command parameters must be given"],"args":[]}]}}},"id":28}
+[2019-06-12 23:31:33,338] DEBUG langserver.core.MessageWriter - Content-Length: 199
+
+
+
+{"jsonrpc":"2.0","error":{"code":-32602,"message":"Invalid params","data":{"meaning":"Invalid method parameter(s).","error":{"obj":[{"msg":["command parameters must be given"],"args":[]}]}}},"id":28}
+[2019-06-12 23:31:33,338] DEBUG langserver.core.MessageWriter - payload: {"jsonrpc":"2.0","error":{"code":-32602,"message":"Invalid params","data":{"meaning":"Invalid method parameter(s).","error":{"obj":[{"msg":["command parameters must be given"],"args":[]}]}}},"id":28}
+[2019-06-12 23:31:33,338] DEBUG langserver.core.MessageWriter - payload: {"jsonrpc":"2.0","error":{"code":-32602,"message":"Invalid params","data":{"meaning":"Invalid method parameter(s).","error":{"obj":[{"msg":["command parameters must be given"],"args":[]}]}}},"id":28}
+[2019-06-12 23:31:34,250] INFO langserver.core.MessageReader - End of stream, terminating thread
+[2019-06-12 23:31:34,250] INFO langserver.core.MessageReader - End of stream, terminating thread
+[2019-06-12 23:31:34,251] INFO org.github.dragos.vscode.EnsimeLanguageServer - Shutdown request
+[2019-06-12 23:31:34,251] INFO org.github.dragos.vscode.EnsimeLanguageServer - Shutdown request
+[2019-06-12 23:31:34,254] INFO org.github.dragos.vscode.EnsimeLanguageServer - Shutting down actor system.
+[2019-06-12 23:31:34,254] INFO org.github.dragos.vscode.EnsimeLanguageServer - Shutting down actor system.
+[2019-06-12 23:31:34,342] INFO org.github.dragos.vscode.EnsimeLanguageServer - Actor system down.
+[2019-06-12 23:31:34,342] INFO org.github.dragos.vscode.EnsimeLanguageServer - Actor system down.
