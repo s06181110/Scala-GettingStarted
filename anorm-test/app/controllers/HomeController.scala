@@ -1,6 +1,7 @@
 package controllers
 
 import javax.inject._
+import models.DBAccess
 import play.api._
 import play.api.mvc._
 
@@ -9,7 +10,7 @@ import play.api.mvc._
  * application's home page.
  */
 @Singleton
-class HomeController @Inject()(cc: ControllerComponents) extends AbstractController(cc) {
+class HomeController @Inject()(db: DBAccess, cc: ControllerComponents) extends AbstractController (cc) {
 
   /**
    * Create an Action to render an HTML page.
@@ -20,5 +21,14 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
    */
   def index() = Action { implicit request: Request[AnyContent] =>
     Ok(views.html.index())
+  }
+
+  def userList = Action {
+    Ok(db.userList.toString())
+  }
+
+  def insert =  Action{
+    db.insert
+    Redirect("/user_list")
   }
 }
