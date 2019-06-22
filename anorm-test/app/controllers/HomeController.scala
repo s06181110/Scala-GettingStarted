@@ -1,9 +1,14 @@
 package controllers
 
+import akka.util.ByteString
 import javax.inject._
 import models.DBAccess
 import play.api._
+import play.api.http.HttpEntity
+import play.api.libs.json.{JsValue, Json}
 import play.api.mvc._
+
+
 
 /**
  * This controller creates an `Action` to handle HTTP requests to the
@@ -24,7 +29,12 @@ class HomeController @Inject()(db: DBAccess, cc: ControllerComponents) extends A
   }
 
   def userList = Action {
-    Ok(db.userList.toString())
+    val users = db.userList
+    Ok(Json.prettyPrint(users))
+//    Result(
+//      header = ResponseHeader(200, Map.empty),
+//      body = HttpEntity.Strict(Json(users), Some("application/json"))
+//    )
   }
 
   def insert =  Action{
